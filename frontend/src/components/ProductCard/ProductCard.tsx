@@ -1,35 +1,22 @@
 import "../../styles/productCard.css";
 
-type ProductCardProps = {
+interface Props {
   image: string;
-  name: string;
+  title: string;
   description: string;
-  price: number;
-};
+  price: string;
+}
 
-export function ProductCard({
-  image,
-  name,
-  description,
-  price,
-}: ProductCardProps) {
+export default function ProductCard({ image, title, description, price }: Props) {
   return (
     <div className="product-card">
-      <img src={image} alt={name} />
-
-      <div className="product-content">
-        <span>Premium</span>
-
-        <h3>{name}</h3>
-
+      <img src={image} alt={title} />
+      <div className="product-info">
+        <h3>{title}</h3>
         <p>{description}</p>
-
         <div className="product-footer">
           <strong>R$ {price}</strong>
-
-          <button>
-            Pedir
-          </button>
+          <button>+</button>
         </div>
       </div>
     </div>

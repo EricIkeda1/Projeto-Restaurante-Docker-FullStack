@@ -1,24 +1,36 @@
 import "../../styles/header.css";
+import logo from "../../assets/Logo.png";
+import { FiSearch, FiShoppingCart, FiUser } from "react-icons/fi";
 
-export function Header() {
+export default function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <span>CP</span>
-
-        <h1>Chef Premium</h1>
+        <img src={logo} alt="Sabon & Arte" />
       </div>
 
-      <nav>
-        <a href="#">Início</a>
-        <a href="#">Cardápio</a>
-        <a href="#">Promoções</a>
-        <a href="#">Contato</a>
+      <nav className="nav">
+        <a className="active">Início</a>
+        <a>Cardápio</a>
+        <a>Promoções</a>
+        <a>Combos</a>
+        <a>Bebidas</a>
+        <a>Sobre mesas</a>
+        <a>Contato</a>
       </nav>
 
-      <button className="header-button">
-        Entrar
-      </button>
+      <div className="header-actions">
+        <button>
+          <FiSearch />
+        </button>
+        <button>
+          <FiUser />
+        </button>
+        <button className="cart">
+          <FiShoppingCart />
+          Carrinho
+        </button>
+      </div>
     </header>
   );
 }
