@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  padding: 24px 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo span {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+
+  background: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+}
+
+.header nav {
+  display: flex;
+  gap: 24px;
+}
+
+.header nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.header-button {
+  border: none;
+  padding: 12px 24px;
+
+  border-radius: 12px;
+
+  background: var(--primary);
+  color: white;
+
+  cursor: pointer;
+}
