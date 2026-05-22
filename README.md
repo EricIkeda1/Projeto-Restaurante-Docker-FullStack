@@ -1,6 +1,6 @@
 # 🍔 Restaurante Premium
 
-Sistema FullStack de restaurante desenvolvido com React, TypeScript, Node.js e Docker, inspirado em interfaces modernas de delivery como iFood e Uber Eats.
+Sistema Simulado FullStack de restaurante desenvolvido com React, TypeScript, Node.js e Docker, inspirado em interfaces modernas de delivery como iFood e Uber Eats.
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
